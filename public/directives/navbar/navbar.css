@@ -1,0 +1,22 @@
+.navbar {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+.logoTitle {
+  height: 120px;
+  width: auto;
+  line-height: 160px;
+}
+
+.logo {
+  margin-left: 40px;
+}
+
+.material-icons.md-64 {
+  margin-left: 40px;
+  font-size: 64px;
+  color: #000;
+ }
