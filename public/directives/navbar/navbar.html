@@ -1,5 +1,15 @@
 <div class="navbar">
-  <a href="#"><i class="material-icons md-64">menu</i></a>
+  <!-- Use any element to open the sidenav -->
+  <span ng-click="openNav()"><a href=""><i class="material-icons md-64">menu</i></a></span>
   <img class="logo" src="../assets/jumplogo.png" alt="" />
   <img class="logoTitle" src="../assets/logo_black.png" alt="" />
+</div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" ng-click="closeNav()">&times;</a>
+  <a class="topMenu" href="#">Attractions</a>
+  <a href="#">Pricing</a>
+  <a href="#">Parties</a>
+  <a href="#">Waiver</a>
+  <a href="#">Contact</a>
 </div>
