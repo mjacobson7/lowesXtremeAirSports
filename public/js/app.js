@@ -9,6 +9,12 @@ angular.module('myApp', ['ui.router'])
       controller: 'homeCtrl'
     })
 
+    .state('attractions', {
+      url: '/attractions',
+      templateUrl: '../features/attractions/attractions.html',
+      controller: 'attractionsCtrl'
+    })
+
     $urlRouterProvider.otherwise('/');
 
   }); //end

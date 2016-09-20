@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  $(window).scroll(function() {
+  $(window).on('scroll', function() {
 		$('.1st').each(function(){
 		var imagePos = $(this).offset().top;
 
@@ -11,7 +11,7 @@ $(document).ready(function(){
 		});
 	});
 
-  $(window).scroll(function() {
+  $(window).on('scroll', function() {
     $('.2nd').each(function(){
     var imagePos = $(this).offset().top;
 
@@ -22,7 +22,7 @@ $(document).ready(function(){
     });
   });
 
-  $(window).scroll(function() {
+  $(window).on('scroll', function() {
     $('.3rd').each(function(){
     var imagePos = $(this).offset().top;
 
@@ -33,7 +33,7 @@ $(document).ready(function(){
     });
   });
 
-  $(window).scroll(function() {
+  $(window).on('scroll', function() {
     $('.4th').each(function(){
     var imagePos = $(this).offset().top;
 
@@ -44,7 +44,7 @@ $(document).ready(function(){
     });
   });
 
-  $(window).scroll(function() {
+  $(window).on('scroll', function() {
     $('.5th').each(function(){
     var imagePos = $(this).offset().top;
 
@@ -54,14 +54,6 @@ $(document).ready(function(){
       }
     });
   });
-
-
-  $(function() {
-	$('a[href*=#]').on('click', function(e) {
-		e.preventDefault();
-		$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-	});
-});
 
 
 

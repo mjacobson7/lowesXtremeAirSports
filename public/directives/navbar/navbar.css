@@ -43,6 +43,7 @@
     color: #818181;
     display: block;
     transition: 0.3s;
+    margin-bottom: 30px;
 }
 
 /* When you mouse over the navigation links, change their color */
