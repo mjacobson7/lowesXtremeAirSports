@@ -29,22 +29,26 @@
     z-index: 100; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #111; /* Black*/
+    background-color: #000;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.3s; /* 0.5 second transition effect to slide in the sidenav */
+    opacity: 0.9;
 }
 
 /* The navigation menu links */
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 100px;
-    color: #818181;
+    font-size: 65px;
+    color: #dedede;
     display: block;
     transition: 0.3s;
-    margin-bottom: 30px;
 }
+
+.topMenu {
+}
+
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover, .offcanvas a:focus{

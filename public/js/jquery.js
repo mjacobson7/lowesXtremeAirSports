@@ -1,61 +1,55 @@
 $(document).ready(function(){
 
-  $(window).on('scroll', function() {
-		$('.1st').each(function(){
-		var imagePos = $(this).offset().top;
+  
+  //initializations
+	var pictures = $("#slider").children("li");
+	var navItems = $("#navigation").children("li");
+	var currentNav, currentPic;
 
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+1500) {
-				$(this).addClass("fadeIn");
-			}
-		});
+
+	//initialize nav
+	$("#navigation").find('li').first().addClass('active');
+
+	function goTo(i){
+		$(navItems).removeClass('active');
+		$("#navigation li").eq(i).addClass('active');
+
+		pictures.fadeOut(400)
+				.eq(i).fadeIn(400);
+	}
+
+
+
+	//Click on new navigation button; make active
+	$("#navigation li").on('click',function(){
+		var index = $(this).index();
+		goTo(index);
 	});
 
-  $(window).on('scroll', function() {
-    $('.2nd').each(function(){
-    var imagePos = $(this).offset().top;
+	$("#next").on('click',function(){
+		//get current Nav index
+		currentNav = parseInt($('.active').index());
+			if (currentNav <3){
+				goTo(currentNav+1);
+			} else {
+				goTo(0);
+			}
+	});
 
-    var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow+1450) {
-        $(this).addClass("fadeIn");
-      }
-    });
-  });
+	$("#prev").on('click',function(){
+		//get current Nav index
+		currentNav = parseInt($('.active').index());
+			if (currentNav >0){
+				goTo(currentNav-1);
+			} else {
+				goTo(3);
+			}
+	});
+	goTo(0);
 
-  $(window).on('scroll', function() {
-    $('.3rd').each(function(){
-    var imagePos = $(this).offset().top;
-
-    var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow+1400) {
-        $(this).addClass("fadeIn");
-      }
-    });
-  });
-
-  $(window).on('scroll', function() {
-    $('.4th').each(function(){
-    var imagePos = $(this).offset().top;
-
-    var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow+1350) {
-        $(this).addClass("fadeIn");
-      }
-    });
-  });
-
-  $(window).on('scroll', function() {
-    $('.5th').each(function(){
-    var imagePos = $(this).offset().top;
-
-    var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow+1300) {
-        $(this).addClass("fadeIn");
-      }
-    });
-  });
-
-
-
+	//loop to cycle through
+	setInterval(function(){
+      $("#next").trigger('click');
+    },2500);
 
 }); //end
