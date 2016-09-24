@@ -29,11 +29,11 @@
     z-index: 100; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #000;
+    background-color: #fff;
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
+
     transition: 0.3s; /* 0.5 second transition effect to slide in the sidenav */
-    opacity: 0.9;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
 }
 
 /* The navigation menu links */
@@ -41,7 +41,7 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 65px;
-    color: #dedede;
+    color: #000;
     display: block;
     transition: 0.3s;
 }
@@ -58,10 +58,10 @@
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
     position: absolute;
-    top: 0;
+    top: 10px;
     right: 25px;
     font-size: 80px;
-    margin-left: 50px;
+    margin-right: 0px;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -72,4 +72,17 @@
 
 .topMenu {
   margin-top: 50px;
+}
+
+.menu {
+  font-size: 60px;
+  padding-left: 40px;
+  display: inline;
+  color: #000;
+}
+
+.headerMenu {
+  padding-bottom: 80px;
+  padding-top: 20px;
+  border-bottom: 1px solid black;
 }

@@ -34,7 +34,7 @@ table {
 @media (max-width: 1024px) {
 
 body {
-	background-color: #3cc47c;
+	background-image: url("../../assets/seigaiha.png");
 	position: relative;
 }
 
@@ -55,7 +55,7 @@ body {
 
 .linkName {
 	text-align: center;
-	color: #fff;
+	color: #3cc47c;
 	font-size: 80px;
 	font-family: 'Ubuntu', sans-serif;
 }
@@ -98,13 +98,13 @@ body {
   width:10px;
   height:10px;
   margin: 0 5px;
-  border:2px solid #2284A1;
+  border:2px solid #000;
   background: white;
   cursor:pointer;
 }
 
 #navigation li.active {
-  background:#2284A1;
+  background: #000;
 }
 
 

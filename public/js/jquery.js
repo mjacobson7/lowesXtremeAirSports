@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  
+
   //initializations
 	var pictures = $("#slider").children("li");
 	var navItems = $("#navigation").children("li");
@@ -14,8 +14,8 @@ $(document).ready(function(){
 		$(navItems).removeClass('active');
 		$("#navigation li").eq(i).addClass('active');
 
-		pictures.fadeOut(400)
-				.eq(i).fadeIn(400);
+		pictures.fadeOut(600)
+				.eq(i).fadeIn(600);
 	}
 
 
@@ -50,6 +50,6 @@ $(document).ready(function(){
 	//loop to cycle through
 	setInterval(function(){
       $("#next").trigger('click');
-    },2500);
+    },3000);
 
 }); //end
