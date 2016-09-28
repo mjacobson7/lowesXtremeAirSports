@@ -6,15 +6,13 @@ angular.module('myApp')
       scope: {},
       controller: function($scope, $state, mainService) {
 
-                /* Set the width of the side navigation to 250px */
-        $scope.openNav = function() {
-            document.getElementById("mySidenav").style.width = "600px";
-        }
+        $(".button-collapse").sideNav({
+          menuWidth: 600, // Default is 240
+          closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        });
 
-        /* Set the width of the side navigation to 0 */
-        $scope.closeNav = function() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
+        $('.button-collapse').sideNav('hide');
+
 
       }
     };

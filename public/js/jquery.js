@@ -52,4 +52,5 @@ $(document).ready(function(){
       $("#next").trigger('click');
     },3000);
 
+
 }); //end

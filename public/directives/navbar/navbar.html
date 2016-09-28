@@ -1,18 +1,20 @@
 <div class="navbar">
-  <!-- Use any element to open the sidenav -->
-  <span ng-click="openNav()"><a href=""><i class="material-icons md-64">menu</i></a></span>
+  <span><a data-activates="slide-out" class="button-collapse"><i class="material-icons md-64">menu</i></a></span>
   <img class="logo" src="../assets/jumplogo.png" alt="" />
   <img class="logoTitle" src="../assets/logo_black.png" alt="" />
 </div>
 
-<div id="mySidenav" class="sidenav">
-  <div class="headerMenu">
-    <p class="menu"></p>
-    <a href="javascript:void(0)" class="closebtn" ng-click="closeNav()">&times;</a>
-</div>
-  <a class="topMenu" href="#">Activities</a>
-  <a class="topMenu" href="#">Pricing</a>
-  <a class="topMenu" href="#">Parties</a>
-  <a class="topMenu" href="#">Waiver</a>
-  <a class="topMenu" href="#">Contact</a>
-</div>
+<ul id="slide-out" class="side-nav">
+   <li><a class="menuLink" ui-sref="home">Home</a></li>
+   <li><div class="divider"></div></li>
+   <li><a class="menuLink" ui-sref="activities">Activities</a></li>
+   <li><div class="divider"></div></li>
+   <li><a class="menuLink" ui-sref="pricing">Pricing</a></li>
+   <li><div class="divider"></div></li>
+   <li><a class="menuLink" ui-sref="parties">Parties</a></li>
+   <li><div class="divider"></div></li>
+   <li><a class="menuLink" ui-sref="waiver">Waiver</a></li>
+   <li><div class="divider"></div></li>
+   <li><a class="menuLink" ui-sref="contact">Contact</a></li>
+   <li><div class="divider"></div></li>
+ </ul>

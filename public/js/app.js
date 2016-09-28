@@ -9,10 +9,34 @@ angular.module('myApp', ['ui.router'])
       controller: 'homeCtrl'
     })
 
-    .state('attractions', {
-      url: '/attractions',
-      templateUrl: '../features/attractions/attractions.html',
-      controller: 'attractionsCtrl'
+    .state('activities', {
+      url: '/activities',
+      templateUrl: '../features/activities/activities.html',
+      controller: 'activitiesCtrl'
+    })
+
+    .state('contact', {
+      url: '/contact',
+      templateUrl: '../features/contact/contact.html',
+      controller: 'contactCtrl'
+    })
+
+    .state('parties', {
+      url: '/parties',
+      templateUrl: '../features/parties/parties.html',
+      controller: 'partiesCtrl'
+    })
+
+    .state('pricing', {
+      url: '/pricing',
+      templateUrl: '../features/pricing/pricing.html',
+      controller: 'pricingCtrl'
+    })
+
+    .state('waiver', {
+      url: '/waiver',
+      templateUrl: '../features/waiver/waiver.html',
+      controller: 'waiverCtrl'
     })
 
     $urlRouterProvider.otherwise('/');
