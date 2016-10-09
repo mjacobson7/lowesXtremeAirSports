@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container1 {
+  background-color: #F6F8F8;
+  border-radius: 5px;
+  width: 800px;
+  border: 1px solid #dedede;
+  text-align: center;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 50px;
+}
+
+.priceTable {
+  border-radius: 5px;
+  border: 1px solid #dedede;
+  width: 90%;
+  margin-bottom: 50px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.tabs {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tabBar {
+  font-size: 25px;
+  color: #3CC27A;
+}
+
+.tabs .indicator {
+    background-color: #3CC27A;
+}
+
+.finePrint {
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container1 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.tabs {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.specialTable {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  width: 700px;
+}
+
+.groupTable {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 40px;
+  margin-top: 80px;
+  width: 600px;
+}
+
+.greenText {
+  color: #3CC27A;
+}
+
+.memberships {
+  width: 750px;
+}

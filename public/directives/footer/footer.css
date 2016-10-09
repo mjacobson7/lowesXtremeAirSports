@@ -1,8 +1,9 @@
-/*.footerLinks {
-  text-align: right;
-}
+body {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+ }
 
-.footerInfo {
-  border: 1px solid red;
-  display: inline-block;
-}*/
+ main {
+   flex: 1 0 auto;
+ }
