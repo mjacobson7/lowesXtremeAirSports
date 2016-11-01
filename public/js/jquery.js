@@ -52,11 +52,11 @@ $(document).ready(function(){
   //     $("#next").trigger('click');
   //   },3000);
 
-		// $('.slider').slider({
-		// 	full_width: true,
-		// 	height: 600,
-		// 	transition: 300
-		// });
+		$('.slider').slider({
+			full_width: true,
+			height: 600,
+			transition: 200
+		});
 
 
 
