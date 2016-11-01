@@ -5,7 +5,7 @@ angular.module('myApp')
     $('.slider').slider({
 			full_width: true,
 			height: 600,
-			transition: 300
+			transition: 200
 		});
   });
 
