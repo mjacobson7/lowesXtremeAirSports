@@ -1,0 +1,51 @@
+h2 {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+
+ul li {
+  text-align: center;
+}
+
+.container1 {
+  margin: 0 auto;
+}
+
+.blu {
+  width: 50%;
+  height: auto;
+}
+
+ul li div {
+  font-size: 50px;
+}
+
+.collapsible-header {
+  padding: 50px;
+}
+
+.preschoolBackground {
+  width: 100%;
+  background-image: url("../../assets/preschoolbackground.jpeg");
+}
+
+.enroll {
+  font-family: 'Amatic SC', cursive;
+  color: #fff;
+}
+
+.mostActive {
+  font-family: 'Over the Rainbow', cursive;
+  color: #B22222;
+  font-weight: bolder;
+}
+
+.jumpStart {
+  font-family: impact,charcoal,sans-serif;
+  color: #ffcc33;
+}
+
+.sister {
+  font-family: 'Love Ya Like A Sister', cursive;
+  color: #B22222;
+}
