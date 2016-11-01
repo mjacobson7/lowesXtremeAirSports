@@ -52,7 +52,10 @@ $(document).ready(function(){
       $("#next").trigger('click');
     },3000);
 
-		$('.slider').slider({full_width: true});
+		$('.slider').slider({
+			full_width: true,
+			height: 600
+		});
 
 
 
