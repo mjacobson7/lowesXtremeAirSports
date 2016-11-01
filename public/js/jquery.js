@@ -48,9 +48,9 @@ $(document).ready(function(){
 	// goTo(0);
 
 	//loop to cycle through
-	setInterval(function(){
-      $("#next").trigger('click');
-    },3000);
+	// setInterval(function(){
+  //     $("#next").trigger('click');
+  //   },3000);
 
 		$('.slider').slider({
 			full_width: true,
